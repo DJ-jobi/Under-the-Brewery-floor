@@ -1,0 +1,30 @@
+{
+  "taproom": {
+    "name": "Abandoned Brewery Taproom",
+    "description": "Dusty oak barrels line the walls. A newly broken stone staircase leads down into the dark cellar.",
+    "exits": {
+      "down": "cellar"
+    },
+    "items": ["ale_flask"],
+    "monsters": []
+  },
+  "cellar": {
+    "name": "Fermentation Cellar",
+    "description": "Cold air rises from cracked stone tiles. Strange glowing slime coats the old copper vats.",
+    "exits": {
+      "up": "taproom",
+      "north": "vault"
+    },
+    "items": ["rusty_key"],
+    "monsters": ["yeast_slime"]
+  },
+  "vault": {
+    "name": "Ancient Cask Vault",
+    "description": "A massive iron door stands open. Something heavy breathes in the shadows.",
+    "exits": {
+      "south": "cellar"
+    },
+    "items": ["iron_sword"],
+    "monsters": ["brewmaster_golem"]
+  }
+}
